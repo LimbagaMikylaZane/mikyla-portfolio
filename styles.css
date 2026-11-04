@@ -604,40 +604,6 @@ main,
   margin: 0 0 18px;
 }
 
-.about-dogs {
-  position: relative;
-  overflow: hidden;
-  min-height: 76px;
-  margin-top: 24px;
-}
-
-.about-dogs-track {
-  display: flex;
-  align-items: center;
-  animation: dogs-walk 7s linear infinite;
-}
-
-.about-dogs-track img {
-  display: block;
-  width: 260px;
-  height: auto;
-}
-
-@keyframes dogs-walk {
-  0% {
-    transform: translateX(-120px);
-  }
-  100% {
-    transform: translateX(calc(100% + 120px));
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .about-dogs-track {
-    animation: none;
-  }
-}
-
 .academic-journey {
   min-width: 0;
 }
@@ -822,21 +788,6 @@ main,
   object-position: center;
   background: rgba(235, 241, 255, 0.45);
   transition: filter 0.35s ease, height 0.35s ease;
-}
-
-.dog-art {
-  display: grid;
-  width: 100%;
-  height: 420px;
-  place-items: center;
-  overflow: hidden;
-  background: #eaf0ff;
-}
-
-.dog-art svg {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .art-card:hover .art-image {
