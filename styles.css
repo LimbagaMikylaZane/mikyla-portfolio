@@ -376,7 +376,7 @@ main,
 }
 
 .btn-primary::after {
-  content: "→";
+  content: "✉";
   margin-left: 12px;
   font-size: 1.1rem;
   transition: transform 0.2s ease;
@@ -396,6 +396,32 @@ main,
   background: rgba(255, 255, 255, 0.66);
   border-color: rgba(18, 27, 40, 0.08);
   color: var(--text);
+}
+
+.btn-resume {
+  gap: 10px;
+  border-color: rgba(77, 100, 216, 0.28);
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--primary-strong);
+  box-shadow: 0 10px 24px rgba(77, 100, 216, 0.1);
+}
+
+.btn-resume::after {
+  content: "↗";
+  font-size: 1.05rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-resume:hover,
+.btn-resume:focus-visible {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  box-shadow: 0 14px 28px rgba(77, 100, 216, 0.18);
+}
+
+.btn-resume:hover::after,
+.btn-resume:focus-visible::after {
+  transform: translate(2px, -2px);
 }
 
 .hero-metrics {
